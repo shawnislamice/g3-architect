@@ -1,0 +1,238 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* Font */
+
+/* Shared Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", serif;
+}
+img {
+  object-fit: cover;
+}
+button:hover {
+  cursor: pointer;
+}
+body {
+  max-width: 1920px;
+}
+.btn-primary {
+  border-radius: 8px;
+  border: none;
+  padding: 20px 25px;
+  background-color: #ff900e;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
+.btn-primary:hover {
+  background-color: #131313;
+  transform: scale(0.9);
+  transition: all 0.5s;
+}
+/* Shared Styles */
+/* Header Related Styles */
+header {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 200px;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+nav > ul a {
+  text-decoration: none;
+  color: #424242;
+}
+nav h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #131313;
+}
+.header-content {
+  max-width: 850px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 0;
+  text-align: center;
+}
+.header-title {
+  font-size: 60px;
+  color: #131313;
+}
+.header-description {
+  color: #727272;
+  font-size: 16px;
+  line-height: 26px;
+}
+.header-img-container {
+  padding: 0 200px;
+  border-radius: 8px;
+}
+.hero-img {
+  width: 100%;
+  padding-bottom: 50px;
+}
+/* Header Related Styles */
+
+/* Quick List Container Styles */
+.quick-list-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  max-width: 1020px;
+  margin: 50px auto;
+}
+.quick-list-img-container {
+  display: grid;
+  gap: 25px;
+  flex: 1;
+  grid-template-columns: repeat(2, 1fr);
+}
+.quick-list-img-container img {
+  width: 300px;
+  height: 300px;
+}
+.quick-list-content-container {
+  flex: 1;
+}
+.quick-content-description {
+  color: #727272;
+  line-height: 25px;
+  text-align: justify;
+  padding: 10px 0;
+}
+.quick-list-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: #131313;
+}
+.quick {
+  opacity: 0.4;
+}
+.features {
+  color: #ff900e;
+}
+/* Quick List Container Styles */
+/* Feature Container Styles */
+.features-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.feature-content-container {
+  flex: 1;
+}
+.features-image-container {
+  flex: 1;
+  position: relative;
+}
+.feature-tag {
+  padding: 30px 10px;
+  background-color: #ff900e;
+  border-radius: 10px;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  width: 300px;
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+}
+.feature-img {
+  height: 600px;
+}
+.feature-content-title {
+  color: #131313;
+  font-size: 35px;
+  padding: 0 15px;
+  border-left: 5px solid #ff900e;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.feature-content-description {
+  opacity: 0.6;
+  line-height: 25px;
+  text-align: justify;
+  padding: 20px 0;
+}
+.feature-card-container {
+  padding: 0 25px;
+}
+.feature-card h2 {
+  color: #131313;
+}
+.feature-card p {
+  opacity: 0.6;
+  text-align: justify;
+  padding: 15px 0;
+}
+.feature-card-container div {
+  margin: 20px 0;
+}
+.year-10 {
+  font-size: 45px;
+  display: block;
+}
+/* Feature Container Styles */
+
+/* Responsive Styles */
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+  nav h3 {
+    padding-bottom: 10px;
+  }
+  .header-content {
+    width: 100%;
+    padding: 10px;
+  }
+  .header-title {
+    font-size: 35px;
+  }
+  /* Quick Styles */
+  .quick-list-container {
+    flex-direction: column;
+  }
+  .quick-list-img-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+  .quick-list-img-container img {
+    width: 100%;
+  }
+  .quick-list-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 30px;
+  }
+  .quick-list-title {
+    font-size: 25px;
+  }
+  .quick-content-description {
+    padding: 10px;
+  }
+
+  /* Quick Styles */
+}
+/* Responsive Styles */
